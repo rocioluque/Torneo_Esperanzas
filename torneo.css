@@ -1,0 +1,37 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 18rem;
+    margin-right: 20px; /* Espacio entre las tarjetas */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd; /* Añade un borde de 1 píxel de color gris claro */
+    border-radius: 8px; /* Añade esquinas redondeadas */
+    overflow: hidden; /* Evita que los bordes redondeados se vean afectados por contenido desbordante */
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Agrega un sombreado sutil cuando se pasa el ratón sobre la tarjeta */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
