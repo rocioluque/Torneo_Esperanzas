@@ -181,32 +181,12 @@ ul li i {
 
 .columna2 {
   text-align: center;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .columna3 {
-  margin-left: 30px;
+  margin-left: 20px;
   text-align: center;
-}
-
-.columna1 {
-  flex-basis: 50%;
-  text-align: center;
-  white-space: wrap;
-  margin-left: -5vw;
-
-}
-
-.columna2 {
-  text-align: center;
-  margin-left: 30px;
-
-}
-
-.columna3 {
-  margin-left: 30px;
-  text-align: center;
-
 }
 
 @media (max-width: 1120px) {
@@ -241,10 +221,10 @@ ul li i {
     text-align: center;
     margin-left: 15vw;
   }
-  
 
   nav{
     text-align: center;
+    align-items: center;
   }
 
   .columna1 {
