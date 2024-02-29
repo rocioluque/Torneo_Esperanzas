@@ -1,3 +1,9 @@
+:root {
+  --color-verde: #39a52f;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,8 +19,8 @@ body {
 
 .footer-superior {
   width: 100%;
-  background-color: #39a52f;
-  color: #ffffff;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
   text-align: center;
   padding: 10px;
   display: flex;
@@ -36,7 +42,7 @@ body {
 
 /* Navegación */
 nav {
-  background-color: #000000;
+  background-color: var(--color-negro);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -59,11 +65,18 @@ nav ul li {
   align-items: center;
 }
 
+.nav-item :hover {
+  background-color: var(--color-verde);
+}
+
 nav a {
   font-size: 18px;
-  color: #ffffff;
+  color: var(--color-blanco);
   text-decoration: none;
   padding: 10px 15px;
+  display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background-color 0.3s;
 }
 
 .navbar-collapse {
@@ -74,12 +87,8 @@ nav a {
 
 /* Enlaces */
 a {
-  color: #ffffff;
+  color: var(--color-blanco);
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* Estilos para el contenedor del dropdown */
@@ -90,23 +99,21 @@ a:hover {
 
 /* Estilos para el botón del dropdown */
 .dropdown-toggle {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
   border: none;
   cursor: pointer;
   font-size: 18px;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  
-  
 }
 
 /* Estilos para el contenido del dropdown */
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #000000;
+  background-color: var(--color-negro);
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -115,16 +122,14 @@ a:hover {
 /* Estilos para los items del dropdown */
 .dropdown-menu a {
   display: block;
-  padding: 10px;
   text-decoration: none;
-  color: #fff;
-  margin-right: 5px;
+  color: var(--color-blanco);
 
 }
 
 /* Cambia el color del item al pasar el mouse por encima */
 .dropdown-menu a:hover {
-  background-color: #ddd;
+  text-decoration: underline;
 }
 
 /* Mostrar el contenido del dropdown al pasar el mouse por encima del contenedor */
@@ -132,10 +137,16 @@ a:hover {
   display: block;
 }
 
+/* Estilos para los items del dropdown */
+.dropdown-menu li {
+  list-style: none; /* Eliminar viñetas de la lista */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
 /* Estilos generales para el footer */
 .footer-inferior {
-  background-color: #39a52f;
-  color: #fff;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
   padding: 20px 0;
   text-align: center;
   display: flex;
@@ -167,11 +178,12 @@ ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
 }
 
 ul li i {
   font-size: 25px;
+  color: var(--color-blanco);
+  margin-right: 15px;
 }
 
 .columna1 {
@@ -179,7 +191,6 @@ ul li i {
   text-align: center;
   white-space: nowrap;
   margin-left: -100px;
-
 }
 
 .columna2 {
@@ -213,19 +224,20 @@ ul li i {
   .logo {
     width: 15%;
   }
+
   .footer-superior h1 {
     font-size: 25px;
     text-align: center;
     margin-left: 15vw;
   }
-  
+
   .footer-superior p {
     font-size: 15px;
     text-align: center;
     margin-left: 15vw;
   }
 
-  nav{
+  nav {
     text-align: center;
     align-items: center;
   }
@@ -234,9 +246,10 @@ ul li i {
     flex-basis: 100%;
     align-items: center;
     text-align: center;
-    margin-left: 4vw ;
+    margin-left: 4vw;
   }
-  .columna2{
+
+  .columna2 {
     text-align: center;
     margin-left: 4vw;
     align-items: center;
@@ -249,10 +262,11 @@ ul li i {
   }
 
   .card {
-    margin-bottom: 20px;  }
-}
+    margin-bottom: 20px;
+  }
 
-.card-container {
-  display: flex;
-  gap: 20px;
+  .card-container {
+    display: flex;
+    gap: 20px;
+  }
 }

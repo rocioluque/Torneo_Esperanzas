@@ -1,3 +1,9 @@
+:root {
+    --color-verde: #39a52f;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+  }
+
 #body.torneos {
     z-index: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.3)), url('./imagenes/cesped.jpg');
@@ -5,14 +11,14 @@
     background-size: cover;
     background-position: center;
     height: 100%;
-    color: #ffffff;
+    color: var(--color-blanco);
     overflow: hidden;
 }
 
 #body {
     position: relative;
     padding: 20px;
-    color: #fff;
+    color: var(--color-blanco);
 }
 
 .card-container {
@@ -22,6 +28,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     align-items: center;
+    gap: 20px;
 }
 
 .card {
@@ -43,10 +50,9 @@
     font-size: 5em;
     width: 100%;
     height: auto;
-    color: #000000;
+    color: var(--color-negro);
     text-align: center;
     padding: 20px 0;
-    text-decoration: none;
 }
 
 .card-body {
@@ -56,4 +62,31 @@
 
 .card-body h1 {
     margin-top: 0;
+}
+
+#logo_torneo {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+.title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+    cursor: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.p_title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #b5b1b1;
 }
