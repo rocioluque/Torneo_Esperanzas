@@ -247,4 +247,8 @@ ul li i {
     text-align: center;
     align-items: center;
   }
+
+  .card {
+    margin-bottom: 20px;
+  }
 }
