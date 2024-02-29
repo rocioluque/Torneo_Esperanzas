@@ -227,6 +227,26 @@ ul li i {
 }
 
 @media (max-width: 720px) {
+  .logo {
+    width: 15%;
+  }
+  .footer-superior h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 15vw;
+  }
+  
+  .footer-superior p {
+    font-size: 15px;
+    text-align: center;
+    margin-left: 15vw;
+  }
+  
+
+  nav{
+    text-align: center;
+  }
+
   .columna1 {
     flex-basis: 100%;
     align-items: center;
