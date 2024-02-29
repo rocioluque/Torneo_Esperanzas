@@ -98,6 +98,8 @@ a:hover {
   border-radius: 5px;
   display: flex;
   align-items: center;
+  
+  
 }
 
 /* Estilos para el contenido del dropdown */
@@ -107,6 +109,7 @@ a:hover {
   background-color: #000000;
   min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 /* Estilos para los items del dropdown */

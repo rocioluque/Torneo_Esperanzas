@@ -1,4 +1,5 @@
 #body.torneos {
+    z-index: 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.3)), url('./imagenes/Pelota_Arco.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,7 +11,6 @@
 
 #body {
     position: relative;
-    z-index: 1;
     padding: 20px;
     color: #fff;
 }
