@@ -210,17 +210,38 @@ ul li i {
 }
 
 @media (max-width: 1120px) {
-  .columna3 {
-    margin-left: 75vw;
+  .columna1 {
+    align-items: center;
     text-align: center;
+  }
 
+  .columna2 {
+    text-align: center;
+    align-items: center;
+  }
+
+  .columna3 {
+    text-align: center;
+    align-items: center;
   }
 }
 
 @media (max-width: 720px) {
-  .columna3 {
-    margin-left: 60vw;
+  .columna1 {
+    flex-basis: 100%;
+    align-items: center;
     text-align: center;
+    margin-left: 4vw ;
+  }
+  .columna2{
+    text-align: center;
+    margin-left: 4vw;
+    align-items: center;
+  }
 
+  .columna3 {
+    margin-left: 4vw;
+    text-align: center;
+    align-items: center;
   }
 }
