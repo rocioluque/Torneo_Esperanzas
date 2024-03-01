@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-  margin-left: 0px;
+  margin-left: 15px;
   width: 100px;
   height: auto;
 }
@@ -63,6 +63,7 @@ nav ul li {
   vertical-align: middle;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .nav-item :hover {
