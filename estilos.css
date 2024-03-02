@@ -160,7 +160,6 @@ a {
   background-color: #b3b3b3; /* Reemplaza con tu color personalizado */
 }
 
-
 /* Estilos generales para el footer */
 .footer-inferior {
   background-color: var(--color-verde);
@@ -230,8 +229,10 @@ ul {
 }
 
 @media (max-width: 720px) {
-  .logo {
-    width: 10%;
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .columna1 {
@@ -245,6 +246,7 @@ ul {
     text-align: center;
     margin-left: 4vw;
     align-items: center;
+    margin-top: 20px;
   }
 
   .card {
@@ -268,8 +270,6 @@ ul {
     align-items: center;
     justify-content: center;
   }
-
- 
 }
 
 /* Agregué estilos para alinear el contenido de texto en pantallas más grandes */
