@@ -60,7 +60,6 @@ body {
   flex: 1;
   align-items: center;
 }
- 
 
 /* Navegación */
 nav {
@@ -157,6 +156,11 @@ a {
   display: block;
 }
 
+.custom-btn {
+  background-color: #b3b3b3; /* Reemplaza con tu color personalizado */
+}
+
+
 /* Estilos generales para el footer */
 .footer-inferior {
   background-color: var(--color-verde);
@@ -243,12 +247,6 @@ ul {
     align-items: center;
   }
 
-  .columna3 {
-    margin-left: 4vw;
-    text-align: center;
-    align-items: center;
-  }
-
   .card {
     margin-bottom: 20px;
   }
@@ -257,6 +255,21 @@ ul {
     display: flex;
     gap: 20px;
   }
+
+  .contenido-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 
 }
 
 /* Agregué estilos para alinear el contenido de texto en pantallas más grandes */
