@@ -3,50 +3,48 @@
     --color-blanco: #ffffff;
     --color-negro: #000000;
     --color-gris-noticia: #b6b0b0;
-  }
+}
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* Estilo para la tarjeta principal */
 .row.border {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    max-width: 400px; /* Establece el ancho máximo de la tarjeta */
-    margin: auto; /* Centra la tarjeta en la página */
+    flex-basis: calc(50% - 20px); /* Ancho máximo para mostrar dos tarjetas en una fila */
+    margin-bottom: 20px;
     background-color: var(--color-blanco);
+    box-sizing: border-box;
 }
 
-/* Estilo para el contenido de la tarjeta */
 .col.p-4 {
     flex: 1;
 }
 
-/* Estilo para el título de la tarjeta */
 h3 {
     color: var(--color-gris-noticia);
-    font-size: 1.5rem; /* Tamaño del título */
+    font-size: 1.5rem;
 }
 
-.card-text{
+.card-text {
     color: var(--color-negro);
 }
 
- .fecha{
+.fecha {
     color: var(--color-negro);
- }
+}
 
-/* Estilo para la fecha y el texto del cuerpo */
 .text-body-secondary {
     color: var(--color-gris-noticia);
 }
 
-/* Estilo para el enlace "Sigue leyendo" */
 .icon-link {
     color: #007bff;
     text-decoration: none;
@@ -54,38 +52,25 @@ h3 {
     align-items: center;
 }
 
-/* Estilo para el icono de flecha */
-.bi {
-    width: 1em;
-    height: 1em;
-    margin-left: .125em;
-}
-
-/* Cambia el color del icono de flecha al pasar el ratón sobre el enlace */
 .icon-link-hover:hover .bi {
     color: #0056b3;
 }
 
-/* Estilos para la imagen dentro de la tarjeta */
 .col-md-4 img {
-    width: 100%; /* Hacer que la imagen ocupe el 100% del ancho de su contenedor */
-    height: 100%; /* Hacer que la imagen ocupe el 100% de la altura de su contenedor */
-    object-fit: cover; /* Ajustar la imagen para cubrir completamente el contenedor */
-    border-radius: 8px; /* Añadir esquinas redondeadas */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-/* Estilos adicionales para la columna con la imagen */
 .col-md-4 {
-    padding: 0; 
+    padding: 0;
 }
 
-
-/* Estilos adicionales para la tarjeta (puedes personalizar según tus necesidades) */
 .row {
-    margin-bottom: 20px; /* Espaciado entre tarjetas */
-    
+    margin-bottom: 20px;
 }
 
 .col p {
-    line-height: 1.5; /* Ajustar el espaciado entre líneas del texto dentro de la tarjeta */
+    line-height: 1.5;
 }
