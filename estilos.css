@@ -188,11 +188,19 @@ a {
   text-align: center;
 }
 
-#fechaTexto {
+#fechaTexto,
+#horaTexto {
   font-size: 20px;
   color: var(--color-blanco);
   margin-right: 20px;
   text-align: center;
+}
+
+#fechaHoraContainer {
+  font-size: 20px;
+  color: var(--color-blanco);
+  display: flex;
+  align-items: center;
 }
 
 /* Estilos para listas desordenadas (ul) */
@@ -260,7 +268,7 @@ ul {
   .contenido-texto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center
   }
 
   .footer-superior {
@@ -268,6 +276,13 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .footer-superior ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
   }
 }
 
@@ -278,5 +293,4 @@ ul {
     flex-direction: column;
     align-items: flex-start;
   }
-
 }
