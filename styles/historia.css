@@ -1,0 +1,51 @@
+:root {
+    --color-verde: #39a52f;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+  }
+
+.title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+    cursor: auto;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, var(--color-blanco), #00ff00);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.p_title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #b5b1b1;
+}
+
+/* Agrega un poco de relleno a las filas para espaciarlas */
+.row {
+    margin-top: 20px;
+}
+
+/* Estilo para las columnas */
+.col-lg-4 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen de marcador de posición */
+.bd-placeholder-img {
+    background-color: var(--bs-secondary-color);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px; /* Centrar la imagen */
+}
+
+/* Estilo para el encabezado */
+h2 {
+    font-weight: normal;
+}
+
+

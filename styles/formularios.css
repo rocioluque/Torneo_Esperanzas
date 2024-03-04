@@ -7,13 +7,11 @@
 /* Estilos generales */
 
 .container-fluid.tittle {
-    background-color: var(--color-verde);
     color: var(--color-blanco);
-    padding: 15px;
-    margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container-fluid.body {
@@ -29,12 +27,15 @@
 .h1-form {
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
 }
 
 .p-form{
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #b5b1b1;
 }
 
 /* Estilos del formulario */
@@ -69,6 +70,7 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn-success:hover {
