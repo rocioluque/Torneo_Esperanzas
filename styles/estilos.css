@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 :root {
   --color-verde: #39a52f;
   --color-blanco: #ffffff;
@@ -11,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Comfortaa', cursive;
 }
 
 .contenido {

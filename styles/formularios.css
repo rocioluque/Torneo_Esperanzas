@@ -2,15 +2,11 @@
     --color-verde: #39a52f;
     --color-blanco: #ffffff;
     --color-negro: #000000;
-  }
+}
 
 /* Estilos generales */
 
-.body {
-    font-family: 'Arial', sans-serif;
-}
-
-.container-fluid.tittle{
+.container-fluid.tittle {
     background-color: var(--color-verde);
     color: var(--color-blanco);
     padding: 15px;
@@ -33,6 +29,12 @@
 .h1-form {
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.p-form{
+    text-align: center;
 }
 
 /* Estilos del formulario */
