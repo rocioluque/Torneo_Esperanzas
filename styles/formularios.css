@@ -1,22 +1,29 @@
+:root {
+    --color-verde: #39a52f;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+  }
+
 /* Estilos generales */
 
-body {
+.body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
 }
 
 .container-fluid.body {
-    background-color: #ffffff;
+    background-color: #eaecc5;
+    color: var(--color-negro);
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    align-items: center;
 }
 
 .h1-form {
-    color: #007bff;
+    color: #218838;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Estilos del formulario */
@@ -49,7 +56,6 @@ form {
     background-color: #28a745;
     color: #fff;
     border: none;
-    padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
 }
