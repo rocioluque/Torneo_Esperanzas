@@ -21,7 +21,7 @@
 }
 
 .h1-form {
-    color: #218838;
+    color: var(--color-negro);
     text-align: center;
     text-transform: uppercase;
 }
