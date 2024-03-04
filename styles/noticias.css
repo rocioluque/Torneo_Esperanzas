@@ -19,7 +19,7 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    flex-basis: calc(50% - 20px); /* Ancho máximo para mostrar dos tarjetas en una fila */
+    flex-basis: calc(50% - 20px);
     margin-bottom: 20px;
     background-color: var(--color-blanco);
     box-sizing: border-box;
@@ -70,4 +70,12 @@ h3 {
 
 .col p {
     line-height: 1.5;
+}
+
+
+/* Utiliza estas clases para el diseño responsivo en dispositivos pequeños */
+@media (max-width: 767px) {
+    .row.border {
+        flex-basis: 100%; /* Establece el ancho al 100% para pantallas pequeñas */
+    }
 }

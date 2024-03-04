@@ -29,6 +29,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 50px;
+    background: linear-gradient(to bottom, var(--color-blanco), #00ff00);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
 }
 
 .p-form{
