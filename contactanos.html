@@ -10,7 +10,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/estilos.css">
     <link rel="stylesheet" href="/styles/fondo.css">
-    <link rel="stylesheet" href="/styles/noticias.css">
     <link rel="stylesheet" href="/styles/formularios.css">
     <title>Organización Esperanzas</title>
 </head>
@@ -115,9 +114,9 @@
         </div>
     </nav>
 
-    <section>
+    <section id="body" class="torneos">
         <div class="container-fluid body">
-            <h1 class="h1-form">Formulario de Contacto</h1>
+            <h1 class="h1-form">Comunicate con nosotros</h1>
         </div>
         <form action="https://formspree.io/f/mrgnknpl" method="POST">
             <div class="container-fluid body" rows="15">
@@ -130,7 +129,7 @@
                         </svg>
                         Apellido y Nombre
                     </label>
-                    <input type="Text" name="Nombre" class="form-control" id="exampleFormControlInput01"
+                    <input type="Text" name="Nombre-Apellido" class="form-control" id="exampleFormControlInput01"
                         placeholder="Apellido y Nombre" required />
                 </div>
 
@@ -143,7 +142,7 @@
                         </svg>
                         Email
                     </label>
-                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                    <input type="email" name="Email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@example.com" required />
                 </div>
 
@@ -156,8 +155,8 @@
                         </svg>
                         Telefono
                     </label>
-                    <input type="text" name="text" class="form-control" id="exampleFormControlInput2"
-                        placeholder="Número de telefono" required />
+                    <input type="text" name="Numero-telefono" class="form-control" id="exampleFormControlInput2"
+                        placeholder="Número de telefono"  />
                 </div>
 
                 <div class="mb-3">
@@ -169,7 +168,7 @@
                         </svg>
                         Ingrese su consulta
                     </label>
-                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="5"
+                    <textarea name="Consulta" class="form-control" id="exampleFormControlTextarea1" rows="5"
                         placeholder="Utilice este espacio para escribir su consulta" required></textarea>
                 </div>
                 <div class="col-auto">
