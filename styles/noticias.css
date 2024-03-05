@@ -72,10 +72,9 @@ h3 {
     line-height: 1.5;
 }
 
-
 /* Utiliza estas clases para el diseño responsivo en dispositivos pequeños */
 @media (max-width: 767px) {
     .row.border {
-        flex-basis: 100%; /* Establece el ancho al 100% para pantallas pequeñas */
+        flex-basis: 100%; 
     }
 }

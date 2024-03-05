@@ -69,3 +69,21 @@ h5 {
     font-size: 2rem;
 }
 
+
+@media (max-width: 767px) {
+    #carouselExampleCaptions {
+        width: 100%; 
+    }
+
+    .carousel-caption {
+        text-align: center; 
+    }
+    
+    h5 {
+        font-size: 1rem; 
+    }  
+
+    .p-historia{
+        font-size: 0.8rem;
+    }
+}
