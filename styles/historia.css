@@ -48,4 +48,24 @@ h2 {
     font-weight: normal;
 }
 
+/* Carrusel */
+
+#carouselExampleCaptions {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: auto;
+}
+
+.carousel-caption {
+    color: #fff;
+}
+
+
+h5 {
+    font-size: 2rem;
+}
 
