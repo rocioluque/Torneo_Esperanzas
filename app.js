@@ -27,8 +27,9 @@ app.use(bodyParser.json());
 
 // Ruta para manejar la solicitud de registro
 app.post('/registro', async (req, res) => {
+  
   const { nombre, apellido, email, contrasena, institucion } = req.body;
-
+  console.log(req.body); 
   try {
       // Verificar si el usuario ya existe por su dirección de correo electrónico
       const usuarioExistente = await Usuario.findOne({ email });
@@ -57,26 +58,6 @@ app.post('/registro', async (req, res) => {
   }
 });
 
-// Ruta para manejar la solicitud de inicio de sesión
-app.post('/iniciar-sesion', async (req, res) => {
-  const { email, contrasena } = req.body;
-
-  try {
-      // Buscar al usuario por email y contraseña
-      const usuario = await Usuario.findOne({ email, contrasena });
-
-      if (usuario) {
-          // Las credenciales son válidas
-          return res.status(200).send('Inicio de sesión exitoso');
-      } else {
-          // Las credenciales no son válidas
-          return res.status(401).send('Error: Credenciales incorrectas');
-      }
-  } catch (error) {
-      console.error(error);
-      return res.status(500).send('Error interno del servidor');
-  }
-});
 
 // Iniciar el servidor
 app.listen(port, () => {
