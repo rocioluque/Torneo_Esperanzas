@@ -1,0 +1,64 @@
+:root {
+    --color-verde: #39a52f;
+    --color-verde-oscuro: #198754;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+}
+
+/* Estilo para el botón de iniciar sesión */
+.btn-iniciar-sesion {
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilo para el modal */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    background-color: var(--color-verde-oscuro);
+    color: var(--color-blanco);
+    border-radius:  5px 0 0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+/* Estilo para el botón cerrar del modal */
+.btn-close {
+    background-color: var(--color-blanco);
+}
+
+/* Estilo para los campos de entrada en el formulario */
+.form-floating input {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón de registro e inicio de sesión */
+.btn-registrar,
+.btn-iniciar {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los labels en el formulario */
+.form-floating label {
+    color: #495057;
+}
+
+/* Añadir estilos específicos si es necesario para el hover o el foco del label */
+.form-floating input:focus+label,
+.form-floating input:valid+label {
+    color: var(--color-negro);
+}
+
+.text-body-secondary {
+    color: var(--color-negro) !important;
+}
