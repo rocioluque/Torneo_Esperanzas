@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-app.post('/usuarios', (req, res) => {
+router.post('/usuarios', (req, res) => {
   const accessToken = req.body.accessToken;
 
   // Verificar el token
