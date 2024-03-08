@@ -1,4 +1,6 @@
 const express = require('express');
+const cors = require('cors');
+
 
 const {auth} = require("express-oauth2-jwt-bearer");
 const errorHandler = require('./src/middleware/errorHandler');
@@ -11,6 +13,7 @@ const autenticacion = auth({
   });
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use('/usuarios', autenticacion, usuariosRouter); // Agregamos el middleware de autenticación aquí
