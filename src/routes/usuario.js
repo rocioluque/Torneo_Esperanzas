@@ -5,14 +5,14 @@ const {getUsuarios, getUsuarioById, createUsuario, updateUsuario, deleteUsuario}
 
 const {requireScopes} = require('express-oauth2-jwt-bearer');
 
-router.get('/', requireScopes('read:usuarios'), getUsuarios); 
+router.get('/', requiredScopes('read:usuarios'), getUsuarios); 
 
-router.get('/:id', requireScopes('read:usuarios'), getUsuarioById);
+router.get('/:id', requiredScopes('read:usuarios'), getUsuarioById);
 
-router.post('/', requireScopes('write:usuarios'), createUsuario);
+router.post('/', requiredScopes('write:usuarios'), createUsuario);
 
-router.put('/:id', requireScopes('write:usuarios'), updateUsuario);
+router.put('/:id', requiredScopes('write:usuarios'), updateUsuario);
 
-router.delete('/:id', requireScopes('write:usuarios'), deleteUsuario);
+router.delete('/:id', requiredScopes('write:usuarios'), deleteUsuario);
 
 module.exports = router;
