@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 app.post('/registro', async (req, res) => {
   
   const { nombre, apellido, email, contrasena, institucion } = req.body;
-  console.log(req.body); 
+console.log(req.body); 
   try {
       // Verificar si el usuario ya existe por su dirección de correo electrónico
       const usuarioExistente = await Usuario.findOne({ email });
