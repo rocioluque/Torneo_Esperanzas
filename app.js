@@ -1,9 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-<<<<<<< HEAD
-=======
 
->>>>>>> f9b0056a1aa00b8ba516e5d4d2fb4fc89618c7e0
 
 const {auth} = require("express-oauth2-jwt-bearer");
 const errorHandler = require('./src/middleware/errorHandler');
