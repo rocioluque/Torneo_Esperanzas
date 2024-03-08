@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://127.0.0.1:27017/OrganizacionEsperanzas", {}); 
 
-const usuarioSchema = new mongoose.Schema({
+const UsuarioSchema = new mongoose.Schema({
     nombre: String,
     apellido: String,
     email: String,
@@ -10,6 +10,6 @@ const usuarioSchema = new mongoose.Schema({
     institucion: String
 }, {collection: 'usuarios'});
 
-const Usuario = mongoose.model('Usuario', usuarioSchema);
+const Usuario = mongoose.model("Usuario", UsuarioSchema);
 
 module.exports = Usuario;
