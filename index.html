@@ -81,7 +81,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-5 pt-0">
-                        <form id="registroForm" action="http://localhost:3000/usuarios" method="post">
+                        <form id="registroForm" method="post">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control rounded-3" id="nombre"
                                     placeholder="Nombre">
@@ -109,7 +109,7 @@
                                     placeholder="Contraseña">
                                 <label for="contraseña">Contraseña</label>
                             </div>
-                            <input type="hidden" name="accessToken" id="accessToken" value="'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlV0SmRjR2E5LXpGMDJyZXpvMWhoMiJ9.eyJpc3MiOiJodHRwczovL2Rldi1sbDZyY21xM2U1aW40ZXIzLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJqdTlXeFpMbnVpc3BNVjhXMDN0Qk1Tc21QSW1tbkx6SkBjbGllbnRzIiwiYXVkIjoiaHR0cDovb3JnYW5pemFjaW9uZXNwZXJhbnphcy5uZXRsaWZ5LmFwcC9hcGkvdXN1YXJpb3MiLCJpYXQiOjE3MDk5MjUxNjgsImV4cCI6MTcxMDAxMTU2OCwiYXpwIjoianU5V3haTG51aXNwTVY4VzAzdEJNU3NtUEltbW5MekoiLCJndHkiOiJjbGllbnQtY3JlZGVudGlhbHMifQ.G2T-HKp1Fu-WkfRe_lSuGHz0-_MVp4VzjhHXUbrWv_bOLcsTLjhUG4c9tqqVnd3scFbE6bojduglehEdLOGmSeU6wEa-9hAS-YSRSi51Kg3fyQnx1gxeJnPi59hbKqTpg6mnLPpXrm-hRK_5TipLeS776vpmb9lyZBFxEmvMC7upsMCwxLtQXo01tIQ-mLTIqCeSQ256sH6Ghg2lp-aTkFibG8HPr9xXdF1eP32rPYDBCb-LfUQyGx53fV24FXrBfJOxryRUGNpLWy3VnuGeZyvDYg-Cf4D1NNXmTDu7Oh8vd7MMXihDfTExo3YI-ZrqxnDkkHiOG_oyCc8Q2ShbsA'">
+                            
                             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success"
                                 type="submit">
                                 Registrarse
@@ -276,6 +276,7 @@
             loginModal.show();
         });
     </script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
