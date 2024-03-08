@@ -7,7 +7,7 @@ const errorHandler = require('./src/middleware/errorHandler');
 const usuariosRouter = require('./src/routes/usuarios');
 
 const autenticacion = auth({
-    audience: 'http:/organizacionesperanzas.netlify.app/api/usuarios',
+    audience: 'https:/organizacionesperanzas.netlify.app/api/usuarios',
     issuerBaseURL: 'https://dev-ll6rcmq3e5in4er3.us.auth0.com/',
     tokenSigningAlg: 'RS256'
   });
