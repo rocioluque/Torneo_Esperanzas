@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 });
 
 // Ruta para crear un nuevo Usuario
-router.post("/usuarios", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const nuevoUsuario = new Usuario(req.body);
     await nuevoUsuario.save();
