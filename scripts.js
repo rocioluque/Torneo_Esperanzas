@@ -52,10 +52,12 @@ let footerFecha = document.getElementById("fechaTexto");
 footerFecha.textContent = obtenerFechaTexto();
 
 
-document.getElementById('btnOpenLoginModal').addEventListener('click', function () {
-  var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
-  loginModal.show();
-});
+// document.getElementById('btnOpenLoginModal').addEventListener('click', function () {
+//   var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+//   loginModal.show();
+// });
+
+
 
 // let loginForm = document.getElementById("registroForm");
 
