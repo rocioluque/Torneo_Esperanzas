@@ -51,29 +51,29 @@ let footerFecha = document.getElementById("fechaTexto");
 // Llamo a la función y le asigno el resultado al elemento <p>
 footerFecha.textContent = obtenerFechaTexto();
 
-let loginForm = document.getElementById("registroForm");
+// let loginForm = document.getElementById("registroForm");
 
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let nombre = document.getElementById("nombre");
-  let apellido = document.getElementById("apellido");
-  let institution = document.getElementById("institution");
-  let email = document.getElementById("email");
-  let contraseña = document.getElementById("contraseña");
+// loginForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let nombre = document.getElementById("nombre");
+//   let apellido = document.getElementById("apellido");
+//   let institution = document.getElementById("institution");
+//   let email = document.getElementById("email");
+//   let contraseña = document.getElementById("contraseña");
 
-  if (email.value == "" || contraseña.value == "") {
-    // throw error
-  } else {
-    let body = {
-      nombre,
-      apellido,
-      institution,
-      email,
-      contraseña
-    }
+//   if (email.value == "" || contraseña.value == "") {
+//     // throw error
+//   } else {
+//     let body = {
+//       nombre,
+//       apellido,
+//       institution,
+//       email,
+//       contraseña
+//     }
 
-    fetch('http://organizacionesperanzas.netlify.app/api/usuarios',body).then((r) =>{
-      console.log(r);
-    })
-  }
-});
+//     fetch('http://organizacionesperanzas.netlify.app/api/usuarios',body).then((r) =>{
+//       console.log(r);
+//     })
+//   }
+// });
