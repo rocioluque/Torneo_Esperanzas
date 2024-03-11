@@ -51,6 +51,12 @@ let footerFecha = document.getElementById("fechaTexto");
 // Llamo a la función y le asigno el resultado al elemento <p>
 footerFecha.textContent = obtenerFechaTexto();
 
+
+document.getElementById('btnOpenLoginModal').addEventListener('click', function () {
+  var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+  loginModal.show();
+});
+
 // let loginForm = document.getElementById("registroForm");
 
 // loginForm.addEventListener("submit", (e) => {
